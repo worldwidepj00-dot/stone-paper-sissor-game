@@ -1,0 +1,139 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.round-counter {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+#round-count {
+    background-color: #081b31;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #0d3b6e;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+.choice:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+    color: #fff;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.reset-container {
+    margin-top: 2rem;
+}
+
+#reset-btn {
+    background-color: #081b31;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#reset-btn:hover {
+    background-color: #0d3b6e;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#reset-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes winner {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.winner-animation {
+    animation: winner 0.5s ease;
+}
